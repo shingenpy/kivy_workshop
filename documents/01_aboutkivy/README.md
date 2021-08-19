@@ -15,7 +15,7 @@ that make use of innovative user interfaces, such as multi-touch apps.
 * 独自の UI 描写用の言語がある (Kv Language)
 
 |
-[home](/)
+[home](https://github.com/shingenpy/kivy_workshop)
 |
-[next](/documents/02_)
+[next](/documents/02_whykivy)
 |
