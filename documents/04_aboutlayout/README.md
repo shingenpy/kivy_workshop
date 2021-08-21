@@ -310,6 +310,8 @@ AllSample:
 
 以上、レイアウトの説明でした。他にもレイアウトはあり、それぞれに特徴がありますので、ぜひ試してみてください。
 
+ここで扱ったサンプルコードは [ココ](/samplecode/layouts)
+
 |
 [back](/documents/03_kivysdo)
 |
