@@ -347,6 +347,8 @@ MainWidget:
 * タイマーがゼロになったときに音を鳴らす
 * Android アプリにしてみる
 
+ここで扱ったサンプルコードは [ココ](/samplecode/timer)
+
 |
 [back](/documents/08_screenmanager)
 |
