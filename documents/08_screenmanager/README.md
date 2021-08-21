@@ -74,6 +74,8 @@ app.root.current に現在のスクリーンが保存してあり、それを変
 
 詳しくは → [Screen Manager](https://kivy.org/doc/stable/api-kivy.uix.screenmanager.html)
 
+ここで扱ったサンプルコードは [ココ](/samplecode/screen)
+
 |
 [back](/documents/07_settings)
 |
