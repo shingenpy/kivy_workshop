@@ -40,7 +40,7 @@ class Sample(Widget):
 └── prop.kv
 ```
 
-*** prop.py ***
+**prop.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -55,7 +55,7 @@ class PropApp(App):
 PropApp().run()
 ```
 
-*** prop.kv ***
+**prop.kv**
 ```
 Sample:
 <Sample>:     
@@ -78,7 +78,7 @@ Sample:
 では、count パラメータが変わったときに、イベントが実行されるかどうか確認しましょう.
 prop.kv を以下のように変更します
 
-*** prop.kv ***
+**prop.kv**
 ```
 Sample:
 <Sample>:

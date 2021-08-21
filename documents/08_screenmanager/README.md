@@ -15,7 +15,7 @@
 └── prop.kv
 ```
 
-** scr.py **
+**scr.py**
 ```
 from kivy.app import App
 from kivy.uix.screenmanager import Screen
@@ -36,7 +36,7 @@ class ScrApp(App):
 ScrApp().run()
 ```
 
-** scr.kv **
+**scr.kv**
 ```
 Main:
     Sub1:

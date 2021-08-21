@@ -34,7 +34,7 @@
 ### Hello World を実行
 まずは、first.py というファイルを作り以下を書きます
 
-** first.py **
+**first.py**
 ```
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -50,7 +50,7 @@ FirstApp().run()
 
 次に UI 定義用のkv ファイルを作ります。名前は必ず first.kv としてください
 
-** first.kv **
+**first.kv**
 ```
 MainWidget:
 

@@ -16,7 +16,7 @@ draw.io などを利用して、インターフェースを試作してみまし
 ## アプリケーションのファイルを作成
 * timer.py を作成
 
-** timer.py **
+**timer.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -33,7 +33,7 @@ TimerApp().run()
 ## UI の定義
 * timer.kv を作成して、ひな形を作成
 
-** timer.kv **
+**timer.kv**
 ```
 #:kivy 1.9.1
 MainWidget: 
@@ -65,7 +65,7 @@ MainWidget:
 * まずはスライダーの値にアクセスするために id を指定する
 * ついでに on_touch_move を定義して、数値が変更されたことを print してみる
 
-** timer.kv **
+**timer.kv**
 ```
 #:kivy 1.9.1
 MainWidget: 
@@ -84,7 +84,7 @@ MainWidget:
 
 時間パネルも連動させる
 
-** timer.kv **
+**timer.kv**
 ```
     :
     Label:
@@ -98,7 +98,8 @@ MainWidget:
     * Slider で数値が変更されたら timer_val 変数に同期するという処理にする
 
 ### timer.py へ追記
-** timer.py **
+
+**timer.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -120,7 +121,7 @@ TimerApp().run()
 
 ### timer.kv を変更し、スライダーの値とカウントダウンのための数値 timer_val が連動するための処理を加える
 
-** timer.kv **
+**timer.kv**
 ```
 #:kivy 1.9.1
 MainWidget: 
@@ -146,7 +147,7 @@ MainWidget:
 * ボタンのテキストを保存する timer_button を定義  
 * ボタンを押したときに実行されるメソッドを定義
 
-** timer.py **
+**timer.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -183,7 +184,7 @@ TimerApp().run()
 * text パラメータに root.timer_button を定義する
 * on_release (ボタンをおして話すときにイベントを実行する) に先ほど定義した関数 on_press_button を定義する
 
-** timer.kv **
+**timer.kv**
 ```
     :
     Button:
@@ -195,7 +196,7 @@ TimerApp().run()
 ## 時間の制御
 * kivy の機能の Clock を使う. 
 
-** timer.py **
+**timer.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -242,7 +243,7 @@ TimerApp().run()
 ### 時間経過で時間パネルの数値も変わるようにする
 * timer.kv の Label の text パラメータを修正する
 
-** timer.kv **
+**timer.kv**
 ```
     Label:
         text: "{:0>2}:{:0>2}".format(root.timer_val // 60, root.timer_val % 60)
@@ -251,7 +252,7 @@ TimerApp().run()
 * 指定時間が過ぎたら時間が進まないようにする
 * 時間が 0 になったら、文字を赤くする
 
-** timer.py **
+**timer.py**
 ```
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -304,7 +305,7 @@ class TimerApp(App):
 TimerApp().run()
 ```
 
-** timer.kv ** 
+**timer.kv** 
 ```
 #:kivy 1.9.1
 
