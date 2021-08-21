@@ -98,6 +98,8 @@ Sample:
 
 パラメータについての詳しい説明は → [Properties](https://kivy.org/doc/stable/api-kivy.properties.html)
 
+ここで扱ったサンプルコードは [ココ](/samplecode/prop)
+
 |
 [back](/documents/05_aboutkvlanguage)
 |
