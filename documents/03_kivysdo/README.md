@@ -10,12 +10,15 @@ Kivy の仕組みを理解するには以下の 2 点をまず説明します
 
 ## Example
 例えば、以下のような UI を持つアプリケーションがあるとします
+
 ![sampleui](/documents/00_image/sampleui.png)
 
 ↓で示したように Widget ごとに分類できます
+
 ![sampleui2](/documents/00_image/sampleui2.png)
 
 配置をツリーで表示するとこんな感じになっています
+
 ![sampleui3](/documents/00_image/sampleui3.png)
 
 # イベント駆動型について
