@@ -59,6 +59,8 @@ MainWidget:
 > python timer.py
 ```
 
+![timerapp2](/documents/00_image/timer1.png)
+
 まだ、スライダーを動かしても、スタートボタンを押しても意味はありません
 
 ## スライダーの動きと時間パネルを連動させる
