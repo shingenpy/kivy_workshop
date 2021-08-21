@@ -1,0 +1,21 @@
+Main:
+    Sub1:
+    Sub2:
+
+<Sub1>:
+    name: "sub1" # ← id ではなくて name、Screen の名前は name でつける
+    BoxLayout:            
+        Button:
+            text: "go sub2"
+            on_release: app.root.current = "sub2"
+        Button:
+            text: "none"
+
+<Sub2>:
+    name: "sub2"
+    BoxLayout:        
+        Button:
+            text: "go sub1"
+            on_release: app.root.current = "sub1"
+        Button:
+            text: "none"

@@ -1,0 +1,10 @@
+Sample:
+<Sample>:
+    on_count: print("count is up")
+    Label:
+        text: str(root.count)
+    Button:
+        text: "on"
+        size: 10,10
+        pos: root.center
+        on_press: root.count += 1

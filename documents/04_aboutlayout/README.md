@@ -82,6 +82,8 @@ first.py と first.kv は同じディレクトリに置くようにしてくだ�
 
 画面の真ん中に "Hello World" が表示されていると思います
 
+![helloworld](/documents/00_image/helloworld.png)
+
 ## いくつかのレイアウトについて紹介
 ### [Boxlayout](https://kivy.org/doc/stable/api-kivy.uix.boxlayout.html#module-kivy.uix.boxlayout)
 縦向きもしくは縦向きに Widget を配置するレイアウトです
@@ -104,6 +106,8 @@ BoxSample:
 <MainWidget>:
     # <略>
 ```
+
+![boxsample](/documents/00_image/boxsample.png)
 
 縦向きか横向きかは以下で設定する
 ```
@@ -140,6 +144,8 @@ GridSample:
     # <略>
 ```
 このまま実行しても OK ですが、cols がないパターンなどを試してみてください。
+
+![gridsample](/documents/00_image/gridsample.png)
 
 ### [StackLayout](https://kivy.org/doc/stable/api-kivy.uix.stacklayout.html#module-kivy.uix.stacklayout)
 * StackLayout は Widget を敷き詰めていくレイアウトです
@@ -191,6 +197,10 @@ StackSample:
 <MainWidget>:
     # <略>
 ```
+
+![stacksample1](/documents/00_image/stacksample1.png)
+
+![stacksample2](/documents/00_image/stacksample2.png)
 
 ### [PageLayout](https://kivy.org/doc/stable/api-kivy.uix.pagelayout.html#module-kivy.uix.pagelayout)
 ページレイアウトとは、複数の Widget を重ねて配置し、ページめくりのように重ねた Widget にアクセスできるレイアウトです
@@ -249,6 +259,8 @@ PageLayout:
 
 いったん実行してみましょう。右端をドラッグして、ページの切り替えができれば OK です。
 
+![pagelayout1](/documents/00_image/pagelayout1.png)
+
 これでは、わからないですが、ページレイアウトには問題があります。
 
 先ほど設定しておいた、n を 0.5 へ変更して再度実行して試してください。
@@ -258,6 +270,8 @@ PageLayout:
 # <略>
 ```
 n は各 Widget の色のアルファ値になっており、0.5 にすることで半透明になります。ページをめくるとわかりますが、ほかのWidget が重ねっていきます。
+
+![pagelayout2](/documents/00_image/pagelayout2.png)
 
 ### マルチレイアウト
 今まで作成したレイアウトの定義は、自由に組み合わせることが可能です。
@@ -291,6 +305,8 @@ AllSample:
     # <略>
 ```
 新たに定義した、AllSample (BoxLayout)に今まで作成した、BoxSample/GridSample/StackSample を並べてみました。
+
+![multilayout](/documents/00_image/multilayout.png)
 
 以上、レイアウトの説明でした。他にもレイアウトはあり、それぞれに特徴がありますので、ぜひ試してみてください。
 

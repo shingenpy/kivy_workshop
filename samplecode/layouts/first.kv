@@ -1,0 +1,82 @@
+#:set n 0.5
+AllSample:
+
+<AllSample@BoxLayout>:
+    BoxSample:
+    GridSample:
+    StackSample:
+
+<PageLayout>:
+    BoxLayout:
+        Label:
+            text: "1"
+            canvas.before:
+                Color:
+                    rgba: 1, 0, 0, n
+                Rectangle:
+                    pos: self.pos
+                    size: self.size            
+    BoxLayout:
+        Label:
+            text: "2"
+            canvas.before:
+                Color:
+                    rgba: 0, 1, 0, n
+                Rectangle:
+                    pos: self.pos
+                    size: self.size        
+    BoxLayout:
+        Label:
+            text: "3"
+            canvas.before:
+                Color:
+                    rgba: 0, 0, 1, n
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+<StackSample@StackLayout>:
+    Button:
+        text: "1"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+    Button:
+        text: "2"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+    Button:
+        text: "3"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+    Button:
+        text: "4"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+    Button:
+        text: "5"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+    Button:
+        text: "6"
+        size: dp(100),dp(100)
+        size_hint: None, 0.15
+
+<GridSample@GridLayout>:
+    rows: 2
+    Button:
+        text: "Yes"
+    Button:
+        text: "No"
+    Button:
+        text: "Even"
+
+<BoxSample@BoxLayout>: 
+    Button:
+        text: "Yes"
+    Button:
+        text: "No"
+
+<MainWidget>:
+    Label:
+        text: "Hello World"
+        pos: root.center 
